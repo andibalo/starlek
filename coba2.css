@@ -1,0 +1,124 @@
+@font-face{  
+    font-family: Montserrat;
+    src: url('Font/Montserrat-SemiBold.ttf');
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Montserrat';
+}
+
+.blog-card {
+    position: absolute;
+    height: 466px;
+    width: 100%;
+    max-width: 370px;
+    margin: auto;
+    border-radius: 36px;
+    background: white;
+    box-shadow: 0px 10px 50px rgb(252 56 56 / 30%);
+    background-image: url(images/corvus-2.png);
+
+}
+
+.inner-part {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 466px;
+    width: 370px;
+    justify-content: center;
+    /* background-image: url(images/corvus-2.png); */
+}
+
+.inner-part-2{
+    height: 466px;
+    width: 370px;
+    /* background-image: url(images/corvus.png); */
+    display: flex;
+    position: absolute;
+}
+
+.content{
+  padding: 0 20px 0 35px;
+  margin-left: 50px;
+  opacity: 0;
+  transition: .6s;
+}
+
+
+#tap-1:checked ~ .inner-part .content-1,
+#tap-2:checked ~ .inner-part .content-2{
+  opacity: 1;
+  margin-left: 0px;
+  z-index: 100;
+  /* transition-delay: .3s; */
+}
+
+.content-1 .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f5dcaf;
+    margin-top: 300px;
+    text-align: center;
+}
+.content-2 .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f5dcaf;
+  margin-top: 300px;
+  text-align: center;
+}
+
+
+
+.sliders {
+    position: absolute;
+    bottom: 25px;
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 12;
+}
+#imgTap:checked ~ .sliders{
+  display: none;
+}
+
+.sliders .tap {
+    position: relative;
+    height: 5px;
+    width: 5px;
+    background: #d9d9d9;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.sliders .tap:hover{
+  background: #cccccc;
+}
+.sliders .tap:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: -100%;
+  background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: transform .6s;
+  transform-origin: left;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+#tap-1:checked ~ .sliders .tap-1:before,
+#tap-2:checked ~ .sliders .tap-2:before
+{
+  transform: scaleX(1);
+  width: 100%;
+}

@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Font/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Font/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Royal";
+  src: url("./Font/MBF-Royal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #f5dcaf;
+  --color-secondary: #40040b;
+}
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mm-menu {
+  --mm-color-background: none;
+  --mm-color-text: white;
+  --mm-color-border: var(--color-primary);
+  background-image: linear-gradient(
+    to bottom,
+    #1a0e10,
+    #1a1116,
+    #19151b,
+    #18181e,
+    #171b21
+  );
+}
+
+.mm-menu .navBtn {
+  display: inline-block;
+  background: var(--color-secondary);
+  border-radius: 20px;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 0 10px rgb(245 220 175 / 70%);
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: "Montserrat";
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.mm-listitem:after {
+  left: 0;
+}
+
+#page .mburger {
+  color: var(--color-primary);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.main {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  padding: 0;
+  /* background: url(./images/Background-min.png);
+  background-size: cover; */
+}
+
+#cityMapVideo {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mainText {
+  display: inline-block;
+  color: var(--color-primary);
+
+  text-shadow: 0 0 10px rgba(245, 220, 175, 0.7), 0 8px 8px rgba(0, 0, 0);
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.navbar {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.navbar-toggler i {
+  color: var(--color-primary);
+}
+
+.navbar.sticky {
+  background-color: rgba(0, 0, 0, 1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-item .nav-link {
+  color: var(--color-primary);
+  font-family: "Royal";
+}
+
+.nav-item .nav-link:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 10px rgba(245, 220, 175, 1);
+}
+
+#page .nav-link.navBtn {
+  background: var(--color-secondary);
+  border-radius: 50px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 2px solid var(--color-primary);
+  margin-right: 0;
+  color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(245, 220, 175, 0.7);
+}
+
+.nav-item .nav-link {
+  margin-right: 3rem;
+}
+
+.logo {
+  max-width: 70px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.footer {
+  background-image: linear-gradient(
+    to bottom,
+    #14141a,
+    #111116,
+    #0d0d11,
+    #08080b,
+    #030304
+  );
+  color: var(--color-primary);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer .logo {
+  max-width: 150px;
+}
+
+.footerLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerLinks .footerLink {
+  flex: 0 0 50%;
+  margin-bottom: 15px;
+}
+
+.footerLinks .footerLink a {
+  color: var(--color-primary);
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.socialLinks a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.logoGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoGroup .logoGroup-logo {
+  max-width: 70px;
+}
+
+.logoGroup .logoGroup-logo img {
+  width: 100%;
+}
+
+.logoGroup .logoGroup-logo:first-child {
+  margin-right: 30px;
+}
+
+@media (max-width: 996px) and (min-width: 768px) {
+  .navbar .nav-link {
+    margin-right: 1rem;
+  }
+
+  .navbar .container {
+    max-width: 820px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainText {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .footer .logo {
+    margin: auto;
+  }
+
+  .footerLinks .footerLink {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .footer .address {
+    text-align: center;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .footer .col-inner {
+    margin-bottom: 50px;
+  }
+
+  .logoGroup {
+    justify-content: center;
+  }
+}

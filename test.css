@@ -1,0 +1,11 @@
+:root {
+  --primary: aqua;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-warning {
+  background-color: blueviolet !important;
+}
