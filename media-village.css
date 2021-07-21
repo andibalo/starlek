@@ -195,7 +195,7 @@ body {
 }
 
 .sponsorLogoContainer {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   width: 150px;
   height: 150px;
   border-radius: 10px;
