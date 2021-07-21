@@ -80,18 +80,10 @@ html {
   min-width: 100vw;
   position: relative;
   padding: 0;
+  background: url(./images/citymap_locked/City\ Map\ Locked\ Feature\ r.png);
+  background-size: cover;
   /* background: url(./images/Background-min.png);
   background-size: cover; */
-}
-
-#cityMapVideo {
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .mainText {
@@ -146,6 +138,17 @@ html {
   box-shadow: 0 0 10px rgb(245 220 175 / 70%);
   margin-left: 2%;
   top: 30px;
+}
+
+#page .nav-link.navBtn {
+  margin-right: 0;
+  transition: all 0.2s;
+}
+
+#page .nav-link.navBtn:hover {
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
+  box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
 }
 
 .nav-item .nav-link {
