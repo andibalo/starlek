@@ -9,14 +9,14 @@ tlCorvus
     backgroundColor: "rgba(0, 0, 0, 0.4)",
     pointerEvents: "auto",
   })
-  .from(".modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .from(".corvusModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
   .addLabel("reverseStartingPoint")
-  .from(".fadeInTop", { duration: 0.3, opacity: 0, y: 10, stagger: 0.2 });
+  .from(".corvusModal .fadeInTop", { duration: 0.3, opacity: 0, y: 10, stagger: 0.2 });
 
 let tlCorvusReverse = gsap.timeline({ paused: true });
 
 tlCorvusReverse
-  .to(".modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .to(".corvusModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
   .to(".modalOverlay.corvusModal", {
     duration: 0.3,
     opacity: 0,
@@ -26,6 +26,7 @@ tlCorvusReverse
 
 let isFirstPlay = true;
 $(".location.corvus").click((event) => {
+  console.log("test")
   if (tlCorvus.isActive() || tlCorvusReverse.isActive()) {
     return;
   }
@@ -50,6 +51,61 @@ $(".modalOverlay.corvusModal").click(() => {
   tlCorvus.reverse("reverseStartingPoint");
   // tlCorvusReverse.play(0);
 });
+
+
+// UMN
+
+let tlUMN = gsap.timeline({ paused: true });
+
+tlUMN
+  .to(".modalOverlay.UMNModal", {
+    duration: 0.3,
+    opacity: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    pointerEvents: "auto",
+  })
+  .from(".UMNModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .addLabel("reverseStartingPoint")
+  .from(".UMNModal .fadeInTop", { duration: 0.3, opacity: 0, y: 10, stagger: 0.2 });
+
+let tlUMNReverse = gsap.timeline({ paused: true });
+
+tlUMNReverse
+  .to(".UMNModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .to(".modalOverlay.UMNModal", {
+    duration: 0.3,
+    opacity: 0,
+    backgroundColor: "transparent",
+    pointerEvents: "none",
+  });
+
+let isUMNFirstPlay = true;
+$(".location.UMN").click((event) => {
+  if (tlUMN.isActive() || tlUMNReverse.isActive()) {
+    return;
+  }
+
+  // tlCorvus.play(0);
+
+  if (isUMNFirstPlay) {
+    tlUMN.play();
+    isUMNFirstPlay = false;
+    return;
+  }
+
+  tlUMN.reversed()
+    ? tlUMN.play()
+    : tlUMN.reverse("reverseStartingPoint");
+});
+
+$(".modalOverlay.UMNModal").click(() => {
+  if (tlUMN.isActive() || tlUMNReverse.isActive()) {
+    return;
+  }
+  tlUMN.reverse("reverseStartingPoint");
+  // tlCorvusReverse.play(0);
+});
+
 
 let tlPhoenix = gsap.timeline({ paused: true });
 
@@ -170,3 +226,44 @@ $(".phoenixModal .thirdBanner").click(() => {
   timeline = "extra3";
   tlPhoenix.reverse();
 });
+
+
+let currentDate = new Date().getTime();
+      let targetDateValue = "Feb 14, 2021 17:06";
+      let targetDate = new Date(targetDateValue).getTime();
+
+      $("#countdown").hide();
+
+      if (targetDate > currentDate) {
+        $("#countdown").show();
+        $(".recruitBtn").addClass("recruitBtn-disabled");
+        $(".dropdownContainer").hide();
+        var x = setInterval(function () {
+          let countDownDate = new Date(targetDateValue).getTime();
+          var now = new Date().getTime();
+
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          (document.getElementById("days").innerText = days),
+            (document.getElementById("hours").innerText = hours),
+            (document.getElementById("minutes").innerText = minutes),
+            (document.getElementById("seconds").innerText = seconds);
+
+          // document.getElementById("countdown").innerHTML =
+          //   days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+          if (distance < 0) {
+            clearInterval(x);
+            $("#countdown").hide();
+            $(".recruitBtn").removeClass("recruitBtn-disabled");
+            $(".dropdownContainer").show();
+          }
+        }, 1000);
+      }
