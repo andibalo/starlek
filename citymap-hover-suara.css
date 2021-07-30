@@ -26,6 +26,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "2P";
+  src: url("./Font/PressStart2P-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+audio {
+  display: none;
+}
+
 :root {
   --color-primary: #f5dcaf;
   --color-secondary: #40040b;
@@ -75,23 +86,34 @@ html {
   overflow-x: hidden;
 }
 
+.img-emerging {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+}
+
+.img-umn {
+  position: absolute;
+  top: 10%;
+  left: 37%;
+}
+
+.img-city {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .main {
   min-height: 100vh;
   min-width: 100vw;
   position: relative;
   padding: 0;
-  /* background: url(./images/Background-min.png);
-  background-size: cover; */
-}
-
-#cityMapVideo {
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  background: url(./images/citymap_locked/Emerging.png);
+  background-size: cover;
 }
 
 .mainText {
@@ -146,6 +168,17 @@ html {
   box-shadow: 0 0 10px rgb(245 220 175 / 70%);
   margin-left: 2%;
   top: 30px;
+}
+
+#page .nav-link.navBtn {
+  margin-right: 0;
+  transition: all 0.2s;
+}
+
+#page .nav-link.navBtn:hover {
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
+  box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
 }
 
 .nav-item .nav-link {
@@ -221,6 +254,166 @@ html {
 
 .logoGroup .logoGroup-logo:first-child {
   margin-right: 30px;
+}
+
+.location .img-container img {
+  width: auto;
+  object-fit: cover;
+}
+
+.location {
+  cursor: pointer;
+}
+
+.modalOverlay {
+  z-index: 1040;
+  background-color: none;
+  opacity: 0;
+  outline: none !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.modalInner {
+  padding: 35px;
+  padding-top: 15px;
+}
+
+.modalContent {
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.modalWrapper {
+  background-image: url(images/citymap_locked/Header.png);
+  height: 100vh;
+}
+
+.phoenixHeader {
+  background-color: var(--color-secondary);
+}
+
+.phoenixModal .firstBanner {
+  z-index: 1050;
+  position: relative;
+}
+
+.imageBanner {
+  background-color: var(--color-primary);
+  height: 500px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.imageBanner img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.modalOverlay .productCard {
+  background-color: var(--color-primary);
+  height: 500px;
+  padding: 30px;
+}
+
+.modalOverlay .productCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modalOverlay .extraHeader {
+  background-color: var(--color-secondary);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.vid-emerging {
+  max-width: 99.5%;
+  padding-left: 4.5%;
+}
+
+.title {
+  font-family: "2P";
+  color: #88e7ff;
+  font-size: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.title-umn {
+  font-family: "2P";
+  color: #88e7ff;
+  font-size: 15px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.sub-title {
+  font-family: "2P";
+  color: #88e7ff;
+  font-size: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+.desc {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 12px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  margin-bottom: 35px;
+}
+
+.desc2 {
+  font-family: "2P";
+  color: white;
+  font-size: 8px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.btn-reg {
+  font-family: "2P";
+  color: #88e7ff;
+  font-size: 12px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  border: 2px solid #88e7ff;
+  margin-left: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
+}
+
+.btn-watch {
+  font-family: "2P";
+  color: #88e7ff;
+  font-size: 12px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  border: 2px solid #88e7ff;
+  margin-left: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
+}
+
+a:hover {
+  color: white;
+}
+
+#countdown {
+  color: white;
+  font-family: "2P";
+  font-size: 12px;
 }
 
 @media (max-width: 996px) and (min-width: 768px) {
