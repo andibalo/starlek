@@ -177,8 +177,8 @@ body {
 #starlightOriginals .thumbnailContainer img {
   width: 100%;
   object-fit: cover;
-  max-height: 320px;
-  border-radius: 30px;
+  border-radius: 20px;
+  height: 320px;
 }
 
 #ctaArrow .container {
@@ -265,15 +265,11 @@ body {
   margin-right: 30px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--color-primary);
-}
-
 .swiper-pagination-bullet-active {
   background: #e4132b;
   height: 8px;
   width: 8px;
+  margin-right: 10px;
 }
 
 .swiper-pagination-bullet {
@@ -282,6 +278,14 @@ body {
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #e4132b;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  left: 45%;
+}
+
+.starlightOriginalImgGroup .col-md-4{
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1200px) {

@@ -95,10 +95,6 @@
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -114,22 +110,50 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="thumbnailContainer">
-                  <a href="https://www.instagram.com/p/COmeNVchcxw/ ">
-                  <img src="./images/t1.jpg" class="thumbnailImg" />
+                  <a href="https://www.instagram.com/p/CLmFohchMsR/ ">
+                  <img src="./images/thumbnail.png" class="thumbnailImg" />
                 </a>
               </div>
               </div>
               <div class="col-md-4">
                 <div class="thumbnailContainer">
-                  <a href="https://www.instagram.com/p/CPkdF4MBXH1/ ">
-                  <img src="./images/t2.png" class="thumbnailImg" />
+                  <a href="https://www.instagram.com/p/CLq_O0NlgEa/ ">
+                  <img src="./images/thumbnail-2.png" class="thumbnailImg" />
                   </a>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="thumbnailContainer">
+                  <a href="https://www.instagram.com/p/CN7jylcnGUS/ ">
+                  <img src="./images/thumbnail-3.png" class="thumbnailImg" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 loadmore-col">
+                <div class="thumbnailContainer">
+                  <a href="https://www.instagram.com/p/COmeNVchcxw/ ">
+                  <img src="./images/thumbnail-4.jpg" class="thumbnailImg" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 loadmore-col">
+                <div class="thumbnailContainer">
+                  <a href="https://www.instagram.com/p/CPkdF4MBXH1/ ">
+                  <img src="./images/thumbnail-5.png" class="thumbnailImg" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 loadmore-col">
+                <div class="thumbnailContainer">
                   <a href="https://www.instagram.com/p/CQX_bN4p9kR/ ">
-                  <img src="./images/t3.png" class="thumbnailImg" />
+                  <img src="./images/thumbnail-6.png" class="thumbnailImg" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 loadmore-col">
+                <div class="thumbnailContainer">
+                  <a href="https://www.instagram.com/p/CRS-Wq4AahX/ ">
+                  <img src="./images/thumbnail-7.jpg" class="thumbnailImg" />
                   </a>
                 </div>
               </div>
@@ -145,7 +169,7 @@
           </div>
         </div>
       </div>
-      <div id="sponsors">
+      <!-- <div id="sponsors">
         <div class="container mb-5">
           <div class="mb-3 d-flex align-items-center sectionHeader">
             <div class="headerLine flex-grow-1"></div>
@@ -164,7 +188,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div id="mediapartners">
         <div class="container mb-5">
           <div class="mb-3 d-flex align-items-center sectionHeader">
@@ -228,7 +252,7 @@
                   class="sponsorLogoContainer mb-5"
                 />
               </div>
-              <div class="col-md-2">
+              <!-- <div class="col-md-2">
                 <img
                   src="images/Medpar/Capo.png"
                   class="sponsorLogoContainer mb-5"
@@ -245,7 +269,7 @@
                   src="images/Medpar/Capo.png"
                   class="sponsorLogoContainer mb-5"
                 />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -368,6 +392,11 @@
         pagination: {
           el: ".swiperMobile-pagination",
         },
+      });
+
+      $(".loadmore-col").hide();
+      $(".arrowDownContainer").click(function(){
+        $(".loadmore-col").fadeIn();
       });
     </script>
   </body>
