@@ -82,8 +82,7 @@ html {
   padding: 0;
   background: url(./images/citymap_locked/City\ Map\ Locked\ Feature\ r.png);
   background-size: cover;
-  /* background: url(./images/Background-min.png);
-  background-size: cover; */
+  background-position-x:center ;
 }
 
 .mainText {
@@ -149,6 +148,13 @@ html {
   transform: translateY(-3px);
   -webkit-box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
   box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
+}
+.home-btn{
+  margin: 20px;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
 }
 
 .nav-item .nav-link {
@@ -226,6 +232,15 @@ html {
   margin-right: 30px;
 }
 
+@media (max-width: 896px) {
+  .main{
+  background: url(./images/citymap_locked/mobile.png);
+  background-position-x:center ;
+  background-position-y:center ;
+  background-size: cover;
+
+  }
+}
 @media (max-width: 996px) and (min-width: 768px) {
   .navbar .nav-link {
     margin-right: 1rem;
@@ -268,5 +283,12 @@ html {
 
   .logoGroup {
     justify-content: center;
+  }
+}
+
+@media (max-width: 577px) {
+  .home-btn{
+    width: 35%;
+    margin: 10px;
   }
 }
