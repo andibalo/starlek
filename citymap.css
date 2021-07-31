@@ -80,7 +80,7 @@ html {
   min-width: 100vw;
   position: relative;
   padding: 0;
-  background: url(./images/citymap_locked/City\ Map\ Locked\ Feature\ r.png);
+  background: url(./images/citymap_locked/CityMapLockedAll.png);
   background-size: cover;
   background-position-x:center ;
 }
@@ -234,7 +234,7 @@ html {
 
 @media (max-width: 896px) {
   .main{
-  background: url(./images/citymap_locked/mobile.png);
+  background: url(./images/citymap_locked/MobileLockedAll.png);
   background-position-x:center ;
   background-position-y:center ;
   background-size: cover;
