@@ -170,15 +170,12 @@ html {
   top: 30px;
 }
 
-#page .nav-link.navBtn {
-  margin-right: 0;
-  transition: all 0.2s;
+.home-btn{
+  margin: 20px;
 }
 
-#page .nav-link.navBtn:hover {
+.home-btn:hover {
   transform: translateY(-3px);
-  -webkit-box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
-  box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
 }
 
 .nav-item .nav-link {
@@ -416,6 +413,16 @@ a:hover {
   font-size: 12px;
 }
 
+@media (max-width: 896px) {
+  .main{
+  background: url(./images/citymap_locked/MobileEmerging.png);
+  background-position-x:center ;
+  background-position-y:center ;
+  background-size: cover;
+
+  }
+}
+
 @media (max-width: 996px) and (min-width: 768px) {
   .navbar .nav-link {
     margin-right: 1rem;
@@ -458,5 +465,12 @@ a:hover {
 
   .logoGroup {
     justify-content: center;
+  }
+}
+
+@media (max-width: 577px) {
+  .home-btn{
+    width: 35%;
+    margin: 10px;
   }
 }
