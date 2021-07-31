@@ -170,15 +170,12 @@ html {
   top: 30px;
 }
 
-#page .nav-link.navBtn {
-  margin-right: 0;
-  transition: all 0.2s;
+.home-btn{
+  margin: 20px;
 }
 
-#page .nav-link.navBtn:hover {
+.home-btn:hover {
   transform: translateY(-3px);
-  -webkit-box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
-  box-shadow: 0 10px 15px rgb(245 220 175 / 30%);
 }
 
 .nav-item .nav-link {
@@ -296,7 +293,7 @@ html {
 
 .modalWrapper {
   background-image: url(images/citymap_locked/Header.png);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .phoenixHeader {
@@ -360,13 +357,13 @@ html {
 .sub-title {
   font-family: "2P";
   color: #88e7ff;
-  font-size: 10px;
+  font-size: 14px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .desc {
   font-family: "Montserrat";
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
   margin-bottom: 35px;
 }
@@ -374,25 +371,12 @@ html {
 .desc2 {
   font-family: "2P";
   color: white;
-  font-size: 8px;
+  font-size: 10px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
 }
 
 .btn-reg {
-  font-family: "2P";
-  color: #88e7ff;
-  font-size: 12px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-  border: 2px solid #88e7ff;
-  margin-left: 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
-}
-
-.btn-watch {
   font-family: "2P";
   color: #88e7ff;
   font-size: 12px;
@@ -406,6 +390,20 @@ html {
   box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
 }
 
+.btn-watch {
+  font-family: "2P";
+  color: #88e7ff;
+  font-size: 12px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  border: 2px solid #88e7ff;
+  margin-left: 12%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
+}
+
 a:hover {
   color: white;
 }
@@ -413,7 +411,23 @@ a:hover {
 #countdown {
   color: white;
   font-family: "2P";
-  font-size: 12px;
+  font-size: 10px;
+  margin-left: -39px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.registerText-disable{
+  display: none;
+}
+
+@media (max-width: 896px) {
+  .main{
+  background: url(./images/citymap_locked/MobileEmerging.png);
+  background-position-x:center ;
+  background-position-y:center ;
+  background-size: cover;
+
+  }
 }
 
 @media (max-width: 996px) and (min-width: 768px) {
@@ -458,5 +472,12 @@ a:hover {
 
   .logoGroup {
     justify-content: center;
+  }
+}
+
+@media (max-width: 577px) {
+  .home-btn{
+    width: 35%;
+    margin: 10px;
   }
 }
