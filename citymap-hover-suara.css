@@ -170,11 +170,19 @@ html {
   top: 30px;
 }
 
-.home-btn{
+.home-btn {
   margin: 20px;
 }
 
+.music-btn {
+  width: 5%;
+}
+
 .home-btn:hover {
+  transform: translateY(-3px);
+}
+
+.music-btn:hover {
   transform: translateY(-3px);
 }
 
@@ -418,17 +426,16 @@ a:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-.registerText-disable{
+.registerText-disable {
   display: none;
 }
 
 @media (max-width: 896px) {
-  .main{
-  background: url(./images/citymap_locked/MobileEmerging.png);
-  background-position-x:center ;
-  background-position-y:center ;
-  background-size: cover;
-
+  .main {
+    background: url(./images/citymap_locked/MobileEmerging.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
   }
 }
 
@@ -478,7 +485,7 @@ a:hover {
 }
 
 @media (max-width: 577px) {
-  .home-btn{
+  .home-btn {
     width: 35%;
     margin: 10px;
   }

@@ -23,12 +23,14 @@
   <body style="overflow-x: hidden">
     <div id="page">
         <div class="main container">
-          <audio id="sound" controls preload="auto"><source src="images/citymap_locked/sfx.mp3" controls></source></audio>
+          <audio id="background_audio" autoplay="true" loop="loop" hidden="true"><source src="images/citymap_locked/musictest.mp3"></source></audio>
+          <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfx.mp3" controls></source></audio>
           <div class="main container" >
             <div class="button" id="transparant">
                 <a  href="#">
                   <img src="/images/homeButton.png" class="home-btn img-fluid" alt="">
                 </a>
+                <img src="images/musicButton.png" class="music-btn img-fluid" onclick="mute()" alt="">
             </div>
         </div>
           <div class="location corvus">
@@ -170,6 +172,16 @@
           $("#sound" + $(this).data("beep"))[0].play();
         });
       $("#sound").attr("id", "sound0");
+      </script>
+      <!-- Script for mute music button -->
+      <script>
+        function mute(){
+          if(document.getElementById('background_audio').muted == false){
+            document.getElementById('background_audio').muted = true;
+          } else {
+            document.getElementById('background_audio').muted = false;
+          }
+        }
       </script>
       <!-- Option 1: Bootstrap Bundle with Popper -->
       <script
