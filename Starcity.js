@@ -229,14 +229,13 @@ $(".phoenixModal .thirdBanner").click(() => {
 
 
 let currentDate = new Date().getTime();
-      let targetDateValue = "August 21, 2021 20:00";
+      let targetDateValue = "August 1, 2021 16:22";
       let targetDate = new Date(targetDateValue).getTime();
 
       $("#countdown").hide();
 
       if (targetDate > currentDate) {
         $("#countdown").show();
-        $(".registerText").hide();
         // $(".recruitBtn").addClass("recruitBtn-disabled");
         $(".btn-reg").hide();
         var x = setInterval(function () {
@@ -265,7 +264,6 @@ let currentDate = new Date().getTime();
             $("#countdown").hide();
             $(".recruitBtn").removeClass("recruitBtn-disabled");
             $(".btn-reg").show();
-            $(".registerText").show();
           }
         }, 1000);
       }
