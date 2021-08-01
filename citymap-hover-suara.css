@@ -176,6 +176,7 @@ html {
 
 .music-btn {
   width: 5%;
+  cursor: pointer;
 }
 
 .home-btn:hover {
