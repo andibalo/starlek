@@ -365,7 +365,7 @@ html {
 .sub-title {
   font-family: "2P";
   color: #88e7ff;
-  font-size: 14px;
+  font-size: 12px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .desc {
@@ -381,9 +381,9 @@ html {
 .desc2 {
   font-family: "2P";
   color: white;
-  font-size: 10px;
+  font-size: 9px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .btn-reg {
