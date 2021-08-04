@@ -414,6 +414,15 @@ html {
   box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
 }
 
+.closebtn {
+  color: #88e7ff;
+  position:absolute;
+  margin-left: 90%;
+  margin-top: -1%;
+  font-size: 45px;
+  border: 2px solid #88e7ff;
+}
+
 a:hover {
   color: white;
 }
