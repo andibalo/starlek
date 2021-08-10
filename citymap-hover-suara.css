@@ -366,7 +366,7 @@ html {
 .sub-title {
   font-family: "2P";
   color: #88e7ff;
-  font-size: 14px;
+  font-size: 12px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 .desc {
@@ -382,9 +382,9 @@ html {
 .desc2 {
   font-family: "2P";
   color: white;
-  font-size: 10px;
+  font-size: 9px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .btn-reg {
@@ -413,6 +413,19 @@ html {
   padding-left: 30px;
   padding-right: 30px;
   box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
+}
+
+.closebtn {
+  color: #88e7ff;
+  position:absolute;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  margin-left: 90%;
+  margin-top: 2%;
+  font-size: 45px;
+  /* font-weight: bold; */
+  border: 2px solid #88e7ff;
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 1);
+  line-height: 30px;
 }
 
 a:hover {
