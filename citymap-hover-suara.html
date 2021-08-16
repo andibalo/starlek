@@ -23,7 +23,7 @@
   <body style="overflow-x: hidden">
     <div id="page">
         <div class="main container">
-          <audio id="background_audio" autoplay="true" loop="loop" hidden="true"><source src="images/citymap_locked/musictest.mp3"></source></audio>
+          <audio id="background_audio" loop autoplay hidden><source src="images/citymap_locked/musictest.mp3" type="audio/mp3"></source></audio>
           <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfx.mp3" controls></source></audio>
           <div class="main container" >
             <div class="button" id="transparant">
@@ -53,7 +53,7 @@
           <div class="modalOverlay corvusModal">
             <div class="modalContent">
               <div class="modalWrapper">
-                <a href="javascript:void(0)" id="transparant" class="closebtn" onclick="closeNav()">&times;</a>
+                <div href="javascript:void(0)" id="transparant" class="closebtn" onclick="closeNav()">&times;</div>
                 <div class="img-container">
                   <video autoplay loop id="cityMapVideo" class="vid-emerging">
                     <source src="images/citymap_locked/Stage-1.m4v" type="video/mp4" />
@@ -96,7 +96,7 @@
           <div class="modalOverlay UMNModal">
             <div class="modalContent">
               <div class="modalWrapper">
-                <a href="javascript:void(0)" id="transparant" class="closebtn" onclick="closeNav()">&times;</a>
+                <div href="javascript:void(0)" id="transparant" class="closebtn" onclick="closeNav()">&times;</div>
                 <div class="img-container">
                   <video autoplay loop id="cityMapVideo" class="vid-emerging">
                     <source src="images/citymap_locked/GedungUMN.m4v" type="video/mp4" />
