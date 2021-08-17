@@ -23,12 +23,14 @@
   <body style="overflow-x: hidden">
     <div id="page">
         <div class="main container">
-          <audio id="sound" controls preload="auto"><source src="images/citymap_locked/sfx.mp3" controls></source></audio>
+          <audio id="background_audio" loop autoplay hidden><source src="images/citymap_locked/musictest.mp3" type="audio/mp3"></source></audio>
+          <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfx.mp3" controls></source></audio>
           <div class="main container" >
             <div class="button" id="transparant">
                 <a  href="#">
                   <img src="/images/homeButton.png" class="home-btn img-fluid" alt="">
                 </a>
+                <img src="images/musicButton.png" class="music-btn img-fluid" onclick="mute()" alt="">
             </div>
         </div>
           <div class="location corvus">
@@ -51,6 +53,7 @@
           <div class="modalOverlay corvusModal">
             <div class="modalContent">
               <div class="modalWrapper">
+                <div href="javascript:void(0)" id="transparant" class="closebtn" onclick="closeNav()">&times;</div>
                 <div class="img-container">
                   <video autoplay loop id="cityMapVideo" class="vid-emerging">
                     <source src="images/citymap_locked/Stage-1.m4v" type="video/mp4" />
@@ -93,6 +96,7 @@
           <div class="modalOverlay UMNModal">
             <div class="modalContent">
               <div class="modalWrapper">
+                <div href="javascript:void(0)" id="transparant" class="closebtn" onclick="closeNav()">&times;</div>
                 <div class="img-container">
                   <video autoplay loop id="cityMapVideo" class="vid-emerging">
                     <source src="images/citymap_locked/GedungUMN.m4v" type="video/mp4" />
@@ -101,7 +105,7 @@
                   </video>
                 </div>
                 <div class="modalInner">
-                  <h3 class="title-umn fadeInTop">THE OPENING OF STARLIGHT 2021: GENESIS</h3>
+                  <h3 class="title-umn fadeInTop">GENESIS</h3>
                   <p class="text-white fadeInTop desc">
                     The first virtual opening experience for StarCity is being held at the Multimedia Nusantara University building, the place where it all started 8 editions ago. Celebrate with us throughout The Opening of Starlight 2021 : Genesis.
                   </p>
@@ -170,6 +174,16 @@
           $("#sound" + $(this).data("beep"))[0].play();
         });
       $("#sound").attr("id", "sound0");
+      </script>
+      <!-- Script for mute music button -->
+      <script>
+        function mute(){
+          if(document.getElementById('background_audio').muted == false){
+            document.getElementById('background_audio').muted = true;
+          } else {
+            document.getElementById('background_audio').muted = false;
+          }
+        }
       </script>
       <!-- Option 1: Bootstrap Bundle with Popper -->
       <script
