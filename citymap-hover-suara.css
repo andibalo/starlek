@@ -158,6 +158,8 @@ html {
 .nav-item .nav-link:hover {
   color: var(--color-primary);
   text-shadow: 0 0 10px rgba(245, 220, 175, 1);
+  cursor: url("./images/citymap_locked/Pointer.png"), auto;
+
 }
 
 #page .nav-link.navBtn {
@@ -181,16 +183,20 @@ html {
 
 .music-btn {
   width: 5%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .home-btn:hover {
   transform: translateY(-3px);
   transition: 0.2s;
+  cursor: url("./images/citymap_locked/Pointer.png"), auto;
+
 }
 
 .music-btn:hover {
   transform: translateY(-3px);
+  cursor: url("./images/citymap_locked/Pointer.png"), auto;
+
 }
 
 .nav-item .nav-link {
@@ -273,10 +279,6 @@ html {
   object-fit: cover;
 }
 
-.location {
-  cursor: pointer;
-}
-
 .modalOverlay {
   z-index: 1040;
   background-color: none;
@@ -291,7 +293,7 @@ html {
   top: 0;
   left: 0;
   display: flex;
-  cursor: pointer;
+  /* cursor: pointer; */
   pointer-events: none;
 }
 
@@ -441,6 +443,8 @@ html {
 
 a:hover {
   color: white;
+  cursor: url("./images/citymap_locked/Pointer.png"), auto;
+
 }
 
 #countdown {
@@ -484,7 +488,7 @@ a:hover {
 
   .music-btn {
     width: 13%;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .img-emerging {
@@ -514,7 +518,7 @@ a:hover {
   
   .music-btn {
     width: 7%;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .img-emerging {
@@ -568,7 +572,7 @@ a:hover {
 
   .music-btn {
     width: 9%;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .img-emerging {
@@ -595,7 +599,7 @@ a:hover {
 
   .music-btn {
     width: 10%;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
 .img-emerging {
