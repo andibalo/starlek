@@ -473,6 +473,11 @@ a:hover {
     padding-right: 2%;
     padding-top: 2.5%;
   }
+  .closebtn{
+    margin-left: 89%;
+    margin-top: 3.5%;
+  }
+  
   .music-btn {
     width: 13%;
     cursor: pointer;

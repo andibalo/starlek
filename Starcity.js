@@ -229,7 +229,7 @@ $(".phoenixModal .thirdBanner").click(() => {
 
 
 let currentDate = new Date().getTime();
-      let targetDateValue = "August 1, 2021 19:44";
+      let targetDateValue = "August 21, 2021 20:00";
       let targetDate = new Date(targetDateValue).getTime();
 
       $("#countdown").hide();
