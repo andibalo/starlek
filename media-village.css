@@ -177,7 +177,8 @@ body {
 #starlightOriginals .thumbnailContainer img {
   width: 100%;
   object-fit: cover;
-  max-height: 320px;
+  border-radius: 20px;
+  height: 320px;
 }
 
 #ctaArrow .container {
@@ -189,13 +190,17 @@ body {
 .arrowDownContainer {
   background-color: var(--color-primary);
   border-radius: 50px;
-
+  cursor: pointer;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.arrowDownContainer .open {
+  transform: rotate(180deg);
+}
+
 .sponsorLogoContainer {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   width: 150px;
   height: 150px;
   border-radius: 10px;
@@ -262,6 +267,31 @@ body {
 
 .logoGroup .logoGroup-logo:first-child {
   margin-right: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e4132b;
+  height: 8px;
+  width: 8px;
+  margin-right: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-primary);
+  opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #e4132b;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 45%;
+}
+
+.starlightOriginalImgGroup .imgCol {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 990px) and (max-width: 1200px) {
