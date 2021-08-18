@@ -507,7 +507,7 @@ a:hover {
 
 }
 
-@media (max-width: 996px) and (min-width: 768px) {
+@media (max-width: 996px){
   .navbar .nav-link {
     margin-right: 1rem;
   }
@@ -530,13 +530,13 @@ a:hover {
 
   .img-umn {
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 33%;
     max-width: 30%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) and (max-height: 1080px){
   .mainText {
     text-align: center;
     font-size: 1.3rem;
@@ -584,9 +584,9 @@ a:hover {
 
   .img-umn {
     position: absolute;
-    top: 20%;
-    left: 34%;
-    max-width: 30%;
+    top: 31%;
+    left: 33%;
+    max-width: 32%;
   }
 
 }
@@ -629,8 +629,8 @@ a:hover {
 @media (max-width: 647px) {
   .img-umn {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 36%;
-    max-width: 27%;
+    max-width: 28%;
   }
 }
