@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/Font/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .main {
+    background-image: url(/token/images/gagal.png);
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: center;
+}
+
+.title {
+    font-family: "Montserrat";
+    color: bisque;
+    text-align: center;
+    padding-top: 26%;
+}

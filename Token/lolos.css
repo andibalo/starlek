@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/Font/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .main {
+    background-image: url(/token/images/lolos.png);
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: center;
+}
+
+.title {
+    font-family: "Montserrat";
+    color: bisque;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "Montserrat";
+    color: bisque;
+    text-align: center;
+}
+
+.box {
+    width: 950px;
+    height: 450px;
+    text-align: center;
+    margin: auto;
+    background: rgb(0, 0, 0, 0.5);
+    top: 19%;
+    transform: translateX(9%);
+    position: absolute;
+    overflow: auto;
+    border-radius: 55px;
+    padding-right:50px ;
+    padding-left: 50px;
+    border: 30px solid;
+    border-color: rgb(0, 0, 0, -0.1);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    padding-right: 40px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }

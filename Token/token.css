@@ -1,0 +1,59 @@
+/* @font-face {
+    font-family: "Montserrat";
+    src: url("/Font/Montserrat-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  } */
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("/Font/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  /* @font-face {
+    font-family: "Montserrat";
+    src: url("./Font/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  } */
+  
+  @font-face {
+    font-family: "Royal";
+    src: url("./Font/MBF-Royal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main {
+    background-image: url(/token/images/lolos.png);
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: center;
+}
+
+.title {
+    font-family: "Montserrat";
+    color: bisque;
+    text-align: center;
+    padding-top: 22%;
+}
+
+#TokenInput {
+    display: inline-block;
+    text-align: center;
+    border-radius: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(0, 0, 0, 0);
+    border:3px solid bisque;
+    box-shadow: 0px 0px 9px white;
+}
+
+.input {
+    text-align: center;
+    padding-top: 30px;
+}
