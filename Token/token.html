@@ -10,9 +10,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./mmenu-js-master/dist/mmenu.css" />
-    <link rel="stylesheet" href="./mburger-css-master/dist/mburger.css" />
+    <link rel="stylesheet" href="/mmenu-js-master/dist/mmenu.css" />
+    <link rel="stylesheet" href="/mburger-css-master/dist/mburger.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="/animate.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -24,12 +25,16 @@
 <body>
   <div class="main">
     <div class="container">
-      <h1 class="title">INPUT YOUR TOKEN HERE</h1>
-      <div class="input">
-        <input type="text"maxlength="10" id="TokenInput">
-        <p><a href="#" class="btn" onclick="return btntest_onclick()">VERIFY NOW</a></p>
+      <h1 class="title wow fadeInUp">INPUT YOUR TOKEN HERE</h1>
+      <div class="input ">
+        <input type="text"maxlength="10" id="TokenInput" class="wow fadeInUp" data-wow-delay="0.8s">
+        <p><a href="#" class="btn wow fadeInUp" data-wow-delay="1s" onclick="return btntest_onclick()">VERIFY NOW</a></p>
     </div>
   </div>
 </div>
+<script src="/wow.min.js"></script>
+<script>
+  new WOW().init();
+  </script>
 </body>
 </html>

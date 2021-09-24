@@ -79,15 +79,31 @@
   border:3px solid bisque;
   margin-top: 1rem;
   transition: ease-in-out 0.3s;
+  font-family: "Montserrat";
 }
 
 .btn:hover{
   transform: translateY(-2px);
-  color: aliceblue;
+  color: white;
   transition: ease-in-out 0.3s;
 }
 
 .btn:active{
   transform: translateY(5px);
   transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .title{
+    padding-top: 29%;
+  }
+  #TokenInput{
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .title{
+    padding-top: 35%;
+  }
 }

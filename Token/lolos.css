@@ -43,7 +43,7 @@
   margin: auto;
   background: rgb(0, 0, 0, 0.5);
   top: 19%;
-  transform: translateX(9%);
+  /* transform: translateX(9%); */
   position: absolute;
   overflow: auto;
   border-radius: 55px;
@@ -51,6 +51,11 @@
   padding-left: 50px;
   border: 30px solid;
   border-color: rgb(0, 0, 0, -0.1);
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* width */
@@ -82,8 +87,92 @@
 }
 
 .modal-content {
-  min-width: 1000px;
-  transform: translateX(-25%);
-  position:relative;
+  min-width: 950px;
+  position: fixed;
+  left: 50%;
+  /* top: 20%; */
+  transform: translate(-50%, -0%);
+  float: left;
 }
 
+
+
+@media screen and (max-width: 994px) {
+  .box{
+    width: 850px;
+    height: 450px;
+  }
+  .modal-content{
+    min-width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box{
+    width: 550px;
+    height: 450px;
+  }
+  .modal-content{
+    min-width: 500px;
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .modal-content{
+    min-width: 500px;
+    left: 70%;
+  }
+}
+
+
+@media screen and (max-width: 631px) {
+  .modal-content{
+    min-width: 400px;
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .box{
+    width: 450px;
+    height: 550px;
+  }
+  .modal-content{
+    min-width: 400px;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html{
+    overflow: hidden;
+  }
+  .box{
+    width: 290px;
+    height: 550px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal-content{
+    min-width: 300px;
+    left: 50%;
+  }
+  .title{
+    font-size: 15px;
+  }
+
+  .subtitle{
+    font-size: 12px;
+  }
+
+  .subtitleManage{
+    font-size: 10px;
+  }
+  .dazzling{
+    max-width: 80px;
+  }
+  .qrcode img{
+    max-width: 150px;
+  }
+} 

@@ -10,7 +10,7 @@
     background-size: cover;
     position: relative;
     min-height: 100vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     background-position: center;
 }
 
@@ -18,5 +18,5 @@
     font-family: "Montserrat";
     color: bisque;
     text-align: center;
-    padding-top: 26%;
+    padding-top: 20%;
 }
