@@ -48,12 +48,46 @@
     border-radius: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
     border:3px solid bisque;
     box-shadow: 0px 0px 9px white;
+    color: bisque;
 }
 
 .input {
     text-align: center;
     padding-top: 30px;
+}
+
+#TokenInput:focus{
+    display: inline-block;
+    text-align: center;
+    border-radius: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border:3px solid bisque;
+    box-shadow: 0px 0px 9px white;
+    outline: none;
+}
+
+.btn{
+  background-color:#55050E;
+  color: bisque;
+  border-radius: 18px;
+  padding: 5px 10px;
+  border:3px solid bisque;
+  margin-top: 1rem;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover{
+  transform: translateY(-2px);
+  color: aliceblue;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:active{
+  transform: translateY(5px);
+  transition: ease-in-out 0.3s;
 }

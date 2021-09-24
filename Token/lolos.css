@@ -10,7 +10,7 @@
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   background-position: center;
 }
 
@@ -26,6 +26,14 @@
   color: bisque;
   text-align: center;
   margin-top: 2rem;
+}
+
+.subtitleManage {
+  font-family: "Montserrat";
+  color: bisque;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 20px;
 }
 
 .box {
@@ -76,7 +84,6 @@
 .modal-content {
   min-width: 1000px;
   transform: translateX(-25%);
+  position:relative;
 }
 
-.modal {
-}
