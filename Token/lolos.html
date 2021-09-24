@@ -18,7 +18,11 @@
           href="https://unpkg.com/swiper/swiper-bundle.min.css"
         />
         <link rel="stylesheet" href="lolos.css" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="token.js"></script>
+        
         <title>Token</title>
     </head>
 <body>
@@ -26,11 +30,30 @@
         <div class="container">
             <div class="box">
                 <h1 class="title">JALUR ORANG DALAM KOK BANGGA</h1>
-                <img src="./images/dazzling.png" alt="">
+                <div class="dazzling"><input type="image" src="./images/dazzling2.png" class="dazzling" data-toggle="modal" data-target="#myModal"></inp></div> 
                 <h3 class="subtitle">SELAMAT MASUK GRUP LINE</h3>
-                
+                <div class="qrcode"><img src="./images/BARCODE_PYXIS.png" alt=""></div>
             </div>
+            <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <video src="./images/sepatu.mp4" autoplay loop></video>
+        
+      </div>    
+    </div>
+  </div>
+</div>
         </div>
     </div>
+<!-- Modal -->
+<script    ipt type="text/javascript">
+        $(window).load(function()
+    {
+        $('#myModal').modal('show');
+    });
+</script>
 </body>
 </html>
