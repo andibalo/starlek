@@ -482,9 +482,61 @@ a:hover {
   /* float: left; */
 }
 
+@media (max-width: 996px) {
+  .navbar .nav-link {
+    margin-right: 1rem;
+  }
+
+  .navbar .container {
+    max-width: 820px;
+  }
+
+  .music-btn {
+    width: 7%;
+    /* cursor: pointer; */
+  }
+
+  .img-emerging {
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    max-width: 17%;
+  }
+
+  .img-umn {
+    position: absolute;
+    top: 9%;
+    left: 35%;
+    max-width: 30%;
+  }
+
+  .img-dazzling {
+    position: absolute;
+    top: 37%;
+    left: 42.5%;
+    max-width: 14%;
+  }
+
+  .img-baliho {
+    position: absolute;
+    max-width: 15%;
+    top: 9%;
+    left: 17%;
+  }
+
+  .home-btn {
+    max-width: 22%;
+    margin: 10px;
+  }
+
+  .popbaliho a img {
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 896px) {
   .main {
-    background: url(./images/citymap_locked/MobileEmerging.png);
+    background: url(./images/citymap_locked/CitymapDazzling_Mobile.png);
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -522,38 +574,28 @@ a:hover {
 
   .img-umn {
     position: absolute;
-    top: 7%;
-    left: 45%;
+    top: 6%;
+    left: 34%;
     max-width: 31%;
   }
-}
 
-@media (max-width: 996px) {
-  .navbar .nav-link {
-    margin-right: 1rem;
-  }
-
-  .navbar .container {
-    max-width: 820px;
-  }
-
-  .music-btn {
-    width: 7%;
-    /* cursor: pointer; */
-  }
-
-  .img-emerging {
+  .img-dazzling {
     position: absolute;
-    top: 30%;
-    left: 9%;
-    max-width: 17%;
+    top: 37%;
+    left: 42.5%;
+    max-width: 14%;
   }
 
-  .img-umn {
+  .img-baliho {
     position: absolute;
-    top: 30%;
-    left: 33%;
-    max-width: 30%;
+    max-width: 15%;
+    top: 9%;
+    left: 17%;
+  }
+
+  .home-btn {
+    max-width: 20%;
+    margin: 10px;
   }
 }
 
@@ -599,15 +641,47 @@ a:hover {
   .img-emerging {
     position: absolute;
     top: 30%;
-    left: 7%;
+    left: 5%;
     max-width: 20%;
   }
 
   .img-umn {
     position: absolute;
-    top: 31%;
+    top: 13%;
     left: 33%;
     max-width: 32%;
+  }
+
+  .img-dazzling {
+    position: absolute;
+    top: 37%;
+    left: 42.5%;
+    max-width: 14%;
+  }
+
+  .img-baliho {
+    position: absolute;
+    max-width: 15%;
+    top: 18%;
+    left: 17%;
+  }
+
+  .home-btn {
+    max-width: 18%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 647px) {
+  .img-umn {
+    position: absolute;
+    top: 22%;
+    left: 36%;
+    max-width: 28%;
+  }
+
+  .img-dazzling {
+    top: 40%;
   }
 }
 
@@ -631,9 +705,28 @@ a:hover {
 
   .img-umn {
     position: absolute;
-    top: 27%;
+    top: 26%;
     left: 35%;
     max-width: 28%;
+  }
+
+  .img-dazzling {
+    position: absolute;
+    top: 41%;
+    left: 42.5%;
+    max-width: 14%;
+  }
+
+  .img-baliho {
+    position: absolute;
+    max-width: 15%;
+    top: 25%;
+    left: 17%;
+  }
+
+  .home-btn {
+    max-width: 20%;
+    margin: 10px;
   }
 }
 
@@ -644,13 +737,19 @@ a:hover {
     left: 31%;
     max-width: 36%;
   }
-}
 
-@media (max-width: 647px) {
-  .img-umn {
-    position: absolute;
-    top: 35%;
-    left: 36%;
-    max-width: 28%;
+  .img-emerging {
+    max-width: 17%;
+    top: 40%;
+    left: 9%;
+  }
+
+  .img-dazzling {
+    top: 44%;
+  }
+
+  .img-baliho {
+    top: 30%;
+    left: 19%;
   }
 }
