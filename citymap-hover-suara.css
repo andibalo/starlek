@@ -128,7 +128,7 @@ html {
   min-width: 100vw;
   position: relative;
   padding: 0;
-  background: url(./images/citymap_locked/CityMapSpons.png);
+  background: url(./images/citymap_locked/citymapbalihodazzling.png);
   background-size: cover;
   background-position-x: center;
 }
@@ -468,7 +468,7 @@ a:hover {
 }
 
 .modal-dialog {
-  left: 25%;
+  left: 50%;
   /* top: 20%; */
   position: fixed;
 }
@@ -476,9 +476,9 @@ a:hover {
 .popbaliho a img {
   max-width: 950px;
   position: fixed;
-  left: 25%;
-  top: 20%;
-  /* transform: translate(-50%, -0%); */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   /* float: left; */
 }
 
