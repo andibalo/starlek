@@ -467,6 +467,21 @@ a:hover {
   display: none;
 }
 
+.modal-dialog {
+  left: 25%;
+  /* top: 20%; */
+  position: fixed;
+}
+
+.popbaliho a img {
+  max-width: 950px;
+  position: fixed;
+  left: 25%;
+  top: 20%;
+  /* transform: translate(-50%, -0%); */
+  /* float: left; */
+}
+
 @media (max-width: 896px) {
   .main {
     background: url(./images/citymap_locked/MobileEmerging.png);
