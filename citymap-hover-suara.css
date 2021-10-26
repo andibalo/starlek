@@ -483,6 +483,20 @@ a:hover {
 }
 
 @media (max-width: 996px) {
+  .main {
+    background: url(./images/citymap_locked/CitymapDazzling_Mobile.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+  }
+  .modalContent {
+    width: 100%;
+  }
+
+  .modalWrapper {
+    background-image: url(images/citymap_locked/Header-Design-Mobile.png);
+    background-size: cover;
+  }
   .navbar .nav-link {
     margin-right: 1rem;
   }
@@ -498,29 +512,29 @@ a:hover {
 
   .img-emerging {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 9%;
     max-width: 17%;
   }
 
   .img-umn {
     position: absolute;
-    top: 9%;
+    top: 22%;
     left: 35%;
     max-width: 30%;
   }
 
   .img-dazzling {
     position: absolute;
-    top: 37%;
+    top: 42%;
     left: 42.5%;
     max-width: 14%;
   }
 
   .img-baliho {
     position: absolute;
-    max-width: 15%;
-    top: 9%;
+    max-width: 13%;
+    top: 25%;
     left: 17%;
   }
 
@@ -535,20 +549,6 @@ a:hover {
 }
 
 @media (max-width: 896px) {
-  .main {
-    background: url(./images/citymap_locked/CitymapDazzling_Mobile.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-  }
-  .modalContent {
-    width: 100%;
-  }
-
-  .modalWrapper {
-    background-image: url(images/citymap_locked/Header-Design-Mobile.png);
-    background-size: cover;
-  }
   .vid-emerging {
     max-width: 99.5%;
     padding-left: 2.7%;
@@ -567,21 +567,21 @@ a:hover {
 
   .img-emerging {
     position: absolute;
-    top: 30%;
+    top: 36%;
     left: 8%;
     max-width: 18%;
   }
 
   .img-umn {
     position: absolute;
-    top: 6%;
+    top: 24%;
     left: 34%;
     max-width: 31%;
   }
 
   .img-dazzling {
     position: absolute;
-    top: 37%;
+    top: 42%;
     left: 42.5%;
     max-width: 14%;
   }
@@ -589,7 +589,7 @@ a:hover {
   .img-baliho {
     position: absolute;
     max-width: 15%;
-    top: 9%;
+    top: 26%;
     left: 17%;
   }
 
@@ -640,21 +640,21 @@ a:hover {
 
   .img-emerging {
     position: absolute;
-    top: 30%;
-    left: 5%;
-    max-width: 20%;
+    top: 39%;
+    left: 7%;
+    max-width: 18%;
   }
 
   .img-umn {
     position: absolute;
-    top: 13%;
+    top: 26%;
     left: 33%;
     max-width: 32%;
   }
 
   .img-dazzling {
     position: absolute;
-    top: 37%;
+    top: 42%;
     left: 42.5%;
     max-width: 14%;
   }
@@ -662,7 +662,7 @@ a:hover {
   .img-baliho {
     position: absolute;
     max-width: 15%;
-    top: 18%;
+    top: 28%;
     left: 17%;
   }
 
@@ -675,19 +675,26 @@ a:hover {
 @media (max-width: 647px) {
   .img-umn {
     position: absolute;
-    top: 22%;
+    top: 32%;
     left: 36%;
     max-width: 28%;
   }
 
   .img-dazzling {
-    top: 40%;
+    top: 43%;
+  }
+
+  .img-baliho {
+    position: absolute;
+    max-width: 15%;
+    top: 33%;
+    left: 17%;
   }
 }
 
 @media (max-width: 577px) {
   .home-btn {
-    width: 35%;
+    width: 40%;
     margin: 10px;
   }
 
@@ -698,21 +705,21 @@ a:hover {
 
   .img-emerging {
     position: absolute;
-    top: 36%;
+    top: 42%;
     left: 6%;
-    max-width: 22%;
+    max-width: 18%;
   }
 
   .img-umn {
     position: absolute;
-    top: 26%;
+    top: 33%;
     left: 35%;
     max-width: 28%;
   }
 
   .img-dazzling {
     position: absolute;
-    top: 41%;
+    top: 45%;
     left: 42.5%;
     max-width: 14%;
   }
@@ -720,36 +727,32 @@ a:hover {
   .img-baliho {
     position: absolute;
     max-width: 15%;
-    top: 25%;
+    top: 35%;
     left: 17%;
-  }
-
-  .home-btn {
-    max-width: 20%;
-    margin: 10px;
   }
 }
 
 @media (max-width: 467px) {
   .img-umn {
     position: absolute;
-    top: 28%;
+    top: 34%;
     left: 31%;
     max-width: 36%;
   }
 
   .img-emerging {
     max-width: 17%;
-    top: 40%;
-    left: 9%;
+    top: 42%;
+    left: 6%;
   }
 
   .img-dazzling {
-    top: 44%;
+    top: 45%;
   }
 
   .img-baliho {
-    top: 30%;
-    left: 19%;
+    top: 37%;
+    left: 15%;
+    max-width: 13%;
   }
 }
