@@ -102,6 +102,18 @@ html {
   left: 37%;
 }
 
+.img-dazzling {
+  position: absolute;
+  top: 41.5%;
+  left: 43.5%;
+}
+
+.img-baliho {
+  position: absolute;
+  top: 11%;
+  left: 22%;
+}
+
 .img-city {
   min-height: 100%;
   min-width: 1024px;
@@ -116,9 +128,9 @@ html {
   min-width: 100vw;
   position: relative;
   padding: 0;
-  background: url(./images/citymap_locked/Emerging.png);
+  background: url(./images/citymap_locked/CityMapSpons.png);
   background-size: cover;
-  background-position-x:center ;
+  background-position-x: center;
 }
 
 .mainText {
@@ -159,7 +171,6 @@ html {
   color: var(--color-primary);
   text-shadow: 0 0 10px rgba(245, 220, 175, 1);
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
-
 }
 
 #page .nav-link.navBtn {
@@ -190,13 +201,11 @@ html {
   transform: translateY(-3px);
   transition: 0.2s;
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
-
 }
 
 .music-btn:hover {
   transform: translateY(-3px);
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
-
 }
 
 .nav-item .nav-link {
@@ -425,7 +434,7 @@ html {
 
 .closebtn {
   color: #88e7ff;
-  position:absolute;
+  position: absolute;
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
   margin-left: 90%;
   margin-top: 2%;
@@ -444,7 +453,6 @@ html {
 a:hover {
   color: white;
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
-
 }
 
 #countdown {
@@ -466,14 +474,13 @@ a:hover {
     background-position-y: center;
     background-size: cover;
   }
-  .modalContent{
+  .modalContent {
     width: 100%;
   }
 
-  .modalWrapper{
-    background-image: url(images/citymap_locked/Header-Design-Mobile.png); 
-    background-size:cover;
-
+  .modalWrapper {
+    background-image: url(images/citymap_locked/Header-Design-Mobile.png);
+    background-size: cover;
   }
   .vid-emerging {
     max-width: 99.5%;
@@ -481,7 +488,7 @@ a:hover {
     padding-right: 2%;
     padding-top: 2.5%;
   }
-  .closebtn{
+  .closebtn {
     margin-left: 89%;
     margin-top: 3.5%;
   }
@@ -503,11 +510,10 @@ a:hover {
     top: 7%;
     left: 45%;
     max-width: 31%;
+  }
 }
 
-}
-
-@media (max-width: 996px){
+@media (max-width: 996px) {
   .navbar .nav-link {
     margin-right: 1rem;
   }
@@ -515,7 +521,7 @@ a:hover {
   .navbar .container {
     max-width: 820px;
   }
-  
+
   .music-btn {
     width: 7%;
     /* cursor: pointer; */
@@ -536,7 +542,7 @@ a:hover {
   }
 }
 
-@media (max-width: 767px) and (max-height: 1080px){
+@media (max-width: 767px) and (max-height: 1080px) {
   .mainText {
     text-align: center;
     font-size: 1.3rem;
@@ -588,7 +594,6 @@ a:hover {
     left: 33%;
     max-width: 32%;
   }
-
 }
 
 @media (max-width: 577px) {
@@ -602,7 +607,7 @@ a:hover {
     /* cursor: pointer; */
   }
 
-.img-emerging {
+  .img-emerging {
     position: absolute;
     top: 36%;
     left: 6%;

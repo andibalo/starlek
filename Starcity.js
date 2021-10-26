@@ -11,7 +11,12 @@ tlCorvus
   })
   .from(".corvusModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
   .addLabel("reverseStartingPoint")
-  .from(".corvusModal .fadeInTop", { duration: 0.3, opacity: 0, y: 10, stagger: 0.2 });
+  .from(".corvusModal .fadeInTop", {
+    duration: 0.3,
+    opacity: 0,
+    y: 10,
+    stagger: 0.2,
+  });
 
 let tlCorvusReverse = gsap.timeline({ paused: true });
 
@@ -26,7 +31,7 @@ tlCorvusReverse
 
 let isFirstPlay = true;
 $(".location.corvus").click((event) => {
-  console.log("test")
+  console.log("test");
   if (tlCorvus.isActive() || tlCorvusReverse.isActive()) {
     return;
   }
@@ -52,7 +57,6 @@ $(".modalOverlay.corvusModal").click(() => {
   // tlCorvusReverse.play(0);
 });
 
-
 // UMN
 
 let tlUMN = gsap.timeline({ paused: true });
@@ -66,7 +70,12 @@ tlUMN
   })
   .from(".UMNModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
   .addLabel("reverseStartingPoint")
-  .from(".UMNModal .fadeInTop", { duration: 0.3, opacity: 0, y: 10, stagger: 0.2 });
+  .from(".UMNModal .fadeInTop", {
+    duration: 0.3,
+    opacity: 0,
+    y: 10,
+    stagger: 0.2,
+  });
 
 let tlUMNReverse = gsap.timeline({ paused: true });
 
@@ -93,9 +102,7 @@ $(".location.UMN").click((event) => {
     return;
   }
 
-  tlUMN.reversed()
-    ? tlUMN.play()
-    : tlUMN.reverse("reverseStartingPoint");
+  tlUMN.reversed() ? tlUMN.play() : tlUMN.reverse("reverseStartingPoint");
 });
 
 $(".modalOverlay.UMNModal").click(() => {
@@ -106,6 +113,65 @@ $(".modalOverlay.UMNModal").click(() => {
   // tlCorvusReverse.play(0);
 });
 
+let tlDazzling = gsap.timeline({ paused: true });
+
+tlDazzling
+  .to(".modalOverlay.DazzlingModal", {
+    duration: 0.3,
+    opacity: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    pointerEvents: "auto",
+  })
+  .from(".DazzlingModal .modalContent", {
+    duration: 0.5,
+    opacity: 0,
+    x: "100%",
+  })
+  .addLabel("reverseStartingPoint")
+  .from(".DazzlingModal .fadeInTop", {
+    duration: 0.3,
+    opacity: 0,
+    y: 10,
+    stagger: 0.2,
+  });
+
+let tlDazzlingReverse = gsap.timeline({ paused: true });
+
+tlDazzlingReverse
+  .to(".DazzlingModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .to(".modalOverlay.DazzlingModal", {
+    duration: 0.3,
+    opacity: 0,
+    backgroundColor: "transparent",
+    pointerEvents: "none",
+  });
+
+let isDazzlingFirstPlay = true;
+$(".location.Dazzling").click((event) => {
+  if (tlDazzling.isActive() || tlDazzlingReverse.isActive()) {
+    return;
+  }
+
+  // tlCorvus.play(0);
+
+  if (isDazzlingFirstPlay) {
+    tlDazzling.play();
+    isDazzlingFirstPlay = false;
+    return;
+  }
+
+  tlDazzling.reversed()
+    ? tlDazzling.play()
+    : tlDazzling.reverse("reverseStartingPoint");
+});
+
+$(".modalOverlay.DazzlingModal").click(() => {
+  if (tlDazzling.isActive() || tlDazzlingReverse.isActive()) {
+    return;
+  }
+  tlDazzling.reverse("reverseStartingPoint");
+  // tlCorvusReverse.play(0);
+});
 
 let tlPhoenix = gsap.timeline({ paused: true });
 
@@ -227,46 +293,45 @@ $(".phoenixModal .thirdBanner").click(() => {
   tlPhoenix.reverse();
 });
 
-
 let currentDate = new Date().getTime();
-      let targetDateValue = "August 21, 2021 20:00";
-      let targetDate = new Date(targetDateValue).getTime();
+let targetDateValue = "August 21, 2021 20:00";
+let targetDate = new Date(targetDateValue).getTime();
 
+$("#countdown").hide();
+$(".Regist").show();
+
+if (targetDate > currentDate) {
+  $("#countdown").show();
+  // $(".recruitBtn").addClass("recruitBtn-disabled");
+  $(".btn-reg").hide();
+  $(".Regist").hide();
+  var x = setInterval(function () {
+    let countDownDate = new Date(targetDateValue).getTime();
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    (document.getElementById("days").innerText = days),
+      (document.getElementById("hours").innerText = hours),
+      (document.getElementById("minutes").innerText = minutes),
+      (document.getElementById("seconds").innerText = seconds);
+
+    // document.getElementById("countdown").innerHTML =
+    //   days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
       $("#countdown").hide();
+      $(".recruitBtn").removeClass("recruitBtn-disabled");
+      $(".btn-reg").show();
       $(".Regist").show();
-
-      if (targetDate > currentDate) {
-        $("#countdown").show();
-        // $(".recruitBtn").addClass("recruitBtn-disabled");
-        $(".btn-reg").hide();
-        $(".Regist").hide();
-        var x = setInterval(function () {
-          let countDownDate = new Date(targetDateValue).getTime();
-          var now = new Date().getTime();
-
-          var distance = countDownDate - now;
-
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          (document.getElementById("days").innerText = days),
-            (document.getElementById("hours").innerText = hours),
-            (document.getElementById("minutes").innerText = minutes),
-            (document.getElementById("seconds").innerText = seconds);
-
-          // document.getElementById("countdown").innerHTML =
-          //   days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-          if (distance < 0) {
-            clearInterval(x);
-            $("#countdown").hide();
-            $(".recruitBtn").removeClass("recruitBtn-disabled");
-            $(".btn-reg").show();
-            $(".Regist").show();
-          }
-        }, 1000);
-      }
+    }
+  }, 1000);
+}
