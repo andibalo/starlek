@@ -178,6 +178,33 @@
           </div>
         </div>
       </div>
+      <div id="sponsors">
+        <div class="container mb-5">
+          <div class="mb-3 d-flex align-items-center sectionHeader">
+            <div class="headerLine flex-grow-1"></div>
+            <h3 class="text-center sectionTitle px-3">SPONSORS</h3>
+            <div class="headerLine flex-grow-1"></div>
+          </div>
+          <div class="sponsorsContainer">
+            <div class="row justify-content-center">
+              <div class="row g-5">
+                <div
+                  class="
+                    col-sm-6 col-md-4 col-lg-2
+                    d-flex
+                    justify-content-center justify-content-lg-start
+                  "
+                >
+                  <a
+                    href=" https://www.instagram.com/dominos_id/" target="_blank"
+                  >
+                    <img
+                      src="./images/domino.png"
+                      class="sponsorLogoContainer"
+                    />
+                  </a>
+                </div>
+              </div>
       <!-- <div id="sponsors">
         <div class="container mb-5">
           <div class="mb-3 d-flex align-items-center sectionHeader">
@@ -451,7 +478,13 @@
 
       $(".loadmore-col").hide();
       $(".arrowDownContainer").click(function () {
-        $(".loadmore-col").fadeIn();
+        if ($(".arrowDownContainer i").hasClass("open")) {
+          $(".arrowDownContainer i").removeClass("open");
+          $(".loadmore-col").fadeOut();
+        } else {
+          $(".arrowDownContainer i").addClass("open");
+          $(".loadmore-col").fadeIn();
+        }
       });
     </script>
   </body>
