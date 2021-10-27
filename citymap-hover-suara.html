@@ -23,14 +23,18 @@
   <body style="overflow-x: hidden">
     <div id="page">
         <div class="main container">
-          <!-- <audio id="background_audio" loop autoplay hidden><source src="images/citymap_locked/musictest.mp3" type="audio/mp3"></source></audio> -->
-          <!-- <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfx.mp3" controls></source></audio> -->
+          <iframe src="images/citymap_locked/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+          <audio id="background_audio" autoplay loop>
+            <source src="images/citymap_locked/musicbeneran.mp3" type="audio/mp3">
+          </audio>
+          <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfxbeneran_edited.wav" controls></source></audio>
           <div class="main container" >
             <div class="button" id="transparant">
+                <img src="images/citymap_locked/music_new.png" class="music-btn img-fluid" onclick="mutemusic()" alt="">
                 <a  href="#">
-                  <img src="/images/homeButton.png" class="home-btn img-fluid" alt="">
+                  <img src="images/citymap_locked/home_new.png" class="home-btn img-fluid" alt="">
                 </a>
-                <!-- <img src="images/musicButton.png" class="music-btn img-fluid" onclick="mute()" alt=""> -->
+                <img src="images/citymap_locked/sfx_new.png" class="sfx-btn img-fluid" onclick="mutemusic()" alt="">
             </div>
         </div>
           <div class="location corvus">
@@ -268,7 +272,7 @@
       </script>
       <!-- Script for mute music button -->
       <script>
-        function mute(){
+        function mutemusic(){
           if(document.getElementById('background_audio').muted == false){
             document.getElementById('background_audio').muted = true;
           } else {

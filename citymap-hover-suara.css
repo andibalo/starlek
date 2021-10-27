@@ -188,15 +188,24 @@ html {
   top: 30px;
 }
 
+.button {
+  font-size: 0;
+  margin-left: 1%;
+  padding-top: 1%;
+}
+
 .home-btn {
-  margin: 20px;
+  max-width: 6%;
 }
 
 .music-btn {
-  width: 5%;
-  /* cursor: pointer; */
+  max-width: 5.98%;
 }
 
+.sfx-btn {
+  max-width: 6.06%;
+}
+/* 
 .home-btn:hover {
   transform: translateY(-3px);
   transition: 0.2s;
@@ -206,7 +215,7 @@ html {
 .music-btn:hover {
   transform: translateY(-3px);
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
-}
+} */
 
 .nav-item .nav-link {
   margin-right: 3rem;
