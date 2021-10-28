@@ -27,7 +27,7 @@
           <audio id="background_audio" autoplay loop>
             <source src="images/citymap_locked/musicbeneran.mp3" type="audio/mp3">
           </audio>
-          <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfxbeneran_edited.wav" controls></source></audio>
+          <audio id="sound" controls preload="auto" hidden="true" src="images/citymap_locked/sfxbeneran_edited.wav"></audio>
           <div class="main container" >
             <div class="button" id="transparant">
                 <img src="images/citymap_locked/music_new.png" class="music-btn img-fluid" onclick="mutemusic()" alt=""
@@ -279,6 +279,18 @@
             document.getElementById('background_audio').muted = true;
           } else {
             document.getElementById('background_audio').muted = false;
+          }
+        }
+      </script>
+
+      <!-- Script for mute sfx button -->
+      <script>
+        var sfx = document.getElementById("sound");
+        function mutesfx(){
+          if(sfx.volume == 1.0){
+            sfx.volume = 0.0;
+          } else {
+            sfx.volume = 1.0;
           }
         }
       </script>
