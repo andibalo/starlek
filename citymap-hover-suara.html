@@ -30,11 +30,11 @@
           <audio id="sound" controls preload="auto" hidden="true"><source src="images/citymap_locked/sfxbeneran_edited.wav" controls></source></audio>
           <div class="main container" >
             <div class="button" id="transparant">
-                <img src="images/citymap_locked/music_new.png" class="music-btn img-fluid" onclick="mutemusic()" alt="">
-                <a  href="#">
+                <img src="images/citymap_locked/music_new.png" class="music-btn img-fluid" onclick="mutemusic()" alt=""
+                ><a  href="#">
                   <img src="images/citymap_locked/home_new.png" class="home-btn img-fluid" alt="">
-                </a>
-                <img src="images/citymap_locked/sfx_new.png" class="sfx-btn img-fluid" onclick="mutemusic()" alt="">
+                </a
+                ><img src="images/citymap_locked/sfx_new.png" class="sfx-btn img-fluid" onclick="mutesfx()" alt="">
             </div>
         </div>
           <div class="location corvus">
@@ -269,6 +269,8 @@
           $("#sound" + $(this).data("beep"))[0].play();
         });
       $("#sound").attr("id", "sound0");
+    
+      
       </script>
       <!-- Script for mute music button -->
       <script>
@@ -280,6 +282,7 @@
           }
         }
       </script>
+
       <!-- Option 1: Bootstrap Bundle with Popper -->
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"

@@ -196,6 +196,7 @@ html {
 
 .home-btn {
   max-width: 6%;
+  border: none;
 }
 
 .music-btn {
@@ -514,11 +515,6 @@ a:hover {
     max-width: 820px;
   }
 
-  .music-btn {
-    width: 7%;
-    /* cursor: pointer; */
-  }
-
   .img-emerging {
     position: absolute;
     top: 35%;
@@ -547,14 +543,27 @@ a:hover {
     left: 17%;
   }
 
-  .home-btn {
-    max-width: 22%;
-    margin: 10px;
-  }
-
   .popbaliho a img {
     max-width: 80%;
   }
+
+  .button {
+    font-size: ;
+    margin-left: 3%;
+  }
+
+  .home-btn {
+    max-width: 11%;
+  }
+
+  .music-btn {
+    max-width: 11%;
+  }
+
+  .sfx-btn {
+    max-width: 11%;
+  }
+}
 }
 
 @media (max-width: 896px) {
@@ -567,11 +576,6 @@ a:hover {
   .closebtn {
     margin-left: 89%;
     margin-top: 3.5%;
-  }
-
-  .music-btn {
-    width: 13%;
-    /* cursor: pointer; */
   }
 
   .img-emerging {
@@ -602,10 +606,7 @@ a:hover {
     left: 17%;
   }
 
-  .home-btn {
-    max-width: 20%;
-    margin: 10px;
-  }
+
 }
 
 @media (max-width: 767px) and (max-height: 1080px) {
@@ -642,11 +643,6 @@ a:hover {
     justify-content: center;
   }
 
-  .music-btn {
-    width: 9%;
-    /* cursor: pointer; */
-  }
-
   .img-emerging {
     position: absolute;
     top: 39%;
@@ -675,9 +671,21 @@ a:hover {
     left: 17%;
   }
 
+  .button {
+    font-size: 0;
+    margin-left: 30%;
+  }
+
   .home-btn {
-    max-width: 18%;
-    margin: 10px;
+    max-width: 19%;
+  }
+
+  .music-btn {
+    max-width: 19%;
+  }
+
+  .sfx-btn {
+    max-width: 19%;
   }
 }
 
@@ -699,19 +707,26 @@ a:hover {
     top: 33%;
     left: 17%;
   }
-}
 
-@media (max-width: 577px) {
+  .button {
+    font-size: 0;
+    margin-left: 26%;
+  }
+
   .home-btn {
-    width: 40%;
-    margin: 10px;
+    max-width: 21%;
   }
 
   .music-btn {
-    width: 10%;
-    /* cursor: pointer; */
+    max-width: 21%;
   }
 
+  .sfx-btn {
+    max-width: 21%;
+  }
+}
+
+@media (max-width: 577px) {
   .img-emerging {
     position: absolute;
     top: 42%;
@@ -739,6 +754,23 @@ a:hover {
     top: 35%;
     left: 17%;
   }
+
+  .button {
+    font-size: 0;
+    margin-left: 25%;
+  }
+
+  .home-btn {
+    max-width: 22%;
+  }
+
+  .music-btn {
+    width: 22%;
+  }
+
+  .sfx-btn {
+    max-width: 22%;
+  }
 }
 
 @media (max-width: 467px) {
@@ -763,5 +795,22 @@ a:hover {
     top: 37%;
     left: 15%;
     max-width: 13%;
+  }
+
+  .button {
+    font-size: 0;
+    margin-left: 26%;
+  }
+
+  .home-btn {
+    max-width: 22%;
+  }
+
+  .music-btn {
+    max-width: 26%;
+  }
+
+  .sfx-btn {
+    max-width: 22%;
   }
 }
