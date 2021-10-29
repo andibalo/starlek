@@ -4,106 +4,115 @@
     font-weight: normal;
     font-style: normal;
   } */
-  
-  @font-face {
-    font-family: "Montserrat";
-    src: url("/Font/Montserrat-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  /* @font-face {
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Font/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* @font-face {
     font-family: "Montserrat";
     src: url("./Font/Montserrat-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
   } */
-  
-  @font-face {
-    font-family: "Royal";
-    src: url("./Font/MBF-Royal.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
+
+@font-face {
+  font-family: "Royal";
+  src: url("./Font/MBF-Royal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .main {
-    background-image: url(/token/images/lolos.png);
-    background-size: cover;
-    position: relative;
-    min-height: 100vh;
-    min-width: 100vw;
-    background-position: center;
+  background-image: url(/token/images/lolos.png);
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-position: center;
 }
 
 .title {
-    font-family: "Montserrat";
-    color: bisque;
-    text-align: center;
-    padding-top: 22%;
+  font-family: "Montserrat";
+  color: bisque;
+  text-align: center;
+  padding-top: 22%;
 }
 
 #TokenInput {
-    display: inline-block;
-    text-align: center;
-    border-radius: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background: rgba(0, 0, 0, 0.5);
-    border:3px solid bisque;
-    box-shadow: 0px 0px 9px white;
-    color: bisque;
+  display: inline-block;
+  text-align: center;
+  border-radius: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid bisque;
+  box-shadow: 0px 0px 9px white;
+  color: bisque;
 }
 
 .input {
-    text-align: center;
-    padding-top: 30px;
+  text-align: center;
+  padding-top: 30px;
 }
 
-#TokenInput:focus{
-    display: inline-block;
-    text-align: center;
-    border-radius: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background: rgba(0, 0, 0, 0.5);
-    border:3px solid bisque;
-    box-shadow: 0px 0px 9px white;
-    outline: none;
+#TokenInput:focus {
+  display: inline-block;
+  text-align: center;
+  border-radius: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid bisque;
+  box-shadow: 0px 0px 9px white;
+  outline: none;
 }
 
-.btn{
-  background-color:#55050E;
+.btn {
+  background-color: #55050e;
   color: bisque;
   border-radius: 18px;
   padding: 5px 10px;
-  border:3px solid bisque;
+  border: 3px solid bisque;
   margin-top: 1rem;
   transition: ease-in-out 0.3s;
   font-family: "Montserrat";
 }
 
-.btn:hover{
+.btn:hover {
   transform: translateY(-2px);
   color: white;
   transition: ease-in-out 0.3s;
 }
 
-.btn:active{
+.btn:active {
   transform: translateY(5px);
   transition: ease-in-out 0.3s;
 }
 
+.swal2-container.swal2-center > .swal2-popup {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.swal2-image {
+  min-width: 200%;
+  height: auto;
+}
+
 @media screen and (max-width: 767px) {
-  .title{
+  .title {
     padding-top: 29%;
   }
-  #TokenInput{
+  #TokenInput {
     padding-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 440px) {
-  .title{
+  .title {
     padding-top: 35%;
   }
 }
