@@ -206,17 +206,24 @@ html {
 .sfx-btn {
   max-width: 6.06%;
 }
-/* 
+
 .home-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.7px);
   transition: 0.2s;
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
 }
 
 .music-btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.7px);
+  transition: 0.2s;
   cursor: url("./images/citymap_locked/Pointer.png"), auto;
-} */
+}
+
+.sfx-btn:hover {
+  transform: translateY(-0.7px);
+  transition: 0.2s;
+  cursor: url("./images/citymap_locked/Pointer.png"), auto;
+}
 
 .nav-item .nav-link {
   margin-right: 3rem;
@@ -554,16 +561,24 @@ a:hover {
 
   .home-btn {
     max-width: 11%;
+    transform: translateY(-0.7px);
+    transition: 0.2s;
+    cursor: url("./images/citymap_locked/Pointer.png"), auto;
   }
 
   .music-btn {
     max-width: 11%;
+    transform: translateY(-0.7px);
+    transition: 0.2s;
+    cursor: url("./images/citymap_locked/Pointer.png"), auto;
   }
 
   .sfx-btn {
     max-width: 11%;
+    transform: translateY(-0.7px);
+    transition: 0.2s;
+    cursor: url("./images/citymap_locked/Pointer.png"), auto;
   }
-}
 }
 
 @media (max-width: 896px) {
@@ -605,8 +620,6 @@ a:hover {
     top: 26%;
     left: 17%;
   }
-
-
 }
 
 @media (max-width: 767px) and (max-height: 1080px) {

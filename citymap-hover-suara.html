@@ -23,18 +23,21 @@
   <body style="overflow-x: hidden">
     <div id="page">
         <div class="main container">
-          <iframe src="images/citymap_locked/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-          <audio id="background_audio" autoplay loop>
+          <iframe src="images/citymap_locked/silence.mp3" allow="autoplay" preload="auto" id="audio" style="display: none"></iframe>
+          <audio id="background_audio" autoplay preload="auto" loop>
             <source src="images/citymap_locked/musicbeneran.mp3" type="audio/mp3">
           </audio>
-          <audio id="sound" controls preload="auto" hidden="true" src="images/citymap_locked/sfxbeneran_edited.wav"></audio>
+          <!-- <audio id="sound" preload="auto" hidden="true" ><source src="images/citymap_locked/sfxbeneran_edited.mp3" type="audio/mp3"></audio> -->
+          <audio id="sound" preload="auto">
+            <source src="images/citymap_locked/sfxbeneran_edited.mp3" type="audio/mp3">
+          </audio>
           <div class="main container" >
             <div class="button" id="transparant">
                 <img src="images/citymap_locked/music_new.png" class="music-btn img-fluid" onclick="mutemusic()" alt=""
                 ><a  href="#">
                   <img src="images/citymap_locked/home_new.png" class="home-btn img-fluid" alt="">
                 </a
-                ><img src="images/citymap_locked/sfx_new.png" class="sfx-btn img-fluid" onclick="mutesfx()" alt="">
+                ><img src="images/citymap_locked/sfx_new.png" class="sfx-btn img-fluid" onclick="mutehover()" alt="">
             </div>
         </div>
           <div class="location corvus">
@@ -253,8 +256,8 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <!-- Script for sound effects -->
-    <script>
+    <!-- Script for sound hover -->
+    <!-- <script>
       $("#transparant img")
         .each(function(i) {
           if (i != 0) {
@@ -269,9 +272,29 @@
           $("#sound" + $(this).data("beep"))[0].play();
         });
       $("#sound").attr("id", "sound0");
-    
+
       
+      </script> -->
+      <!-- Script for sound hover 2 -->
+      <script>
+          var hover = $("#sound")[0];
+      $("#transparant img").mouseenter(function() {
+      hover.play();
+      // hover.loop = true;
+      });
+      // $("#transparant img").mouseleave(function() {
+      // hover.pause();
+      // });
+
+      function mutehover(){
+          if(hover.volume == 1.0){
+            hover.volume = 0.0;
+          } else {
+            hover.volume = 1.0;
+          }
+        }
       </script>
+
       <!-- Script for mute music button -->
       <script>
         function mutemusic(){
@@ -283,16 +306,9 @@
         }
       </script>
 
-      <!-- Script for mute sfx button -->
+      <!-- Test sound volume -->
       <script>
-        var sfx = document.getElementById("sound");
-        function mutesfx(){
-          if(sfx.volume == 1.0){
-            sfx.volume = 0.0;
-          } else {
-            sfx.volume = 1.0;
-          }
-        }
+        document.getElementById('background_audio').volume = 1;
       </script>
 
       <!-- Option 1: Bootstrap Bundle with Popper -->
