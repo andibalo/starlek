@@ -95,19 +95,45 @@
 
 .swal2-container.swal2-center > .swal2-popup {
   background: rgba(0, 0, 0, 0) !important;
+  left: -17%;
+  margin: auto;
 }
 
 .swal2-image {
   min-width: 200%;
   height: auto;
 }
-
+@media screen and (max-width: 1126px) {
+  .swal2-container.swal2-center > .swal2-popup {
+    left: -20%;
+  }
+  .swal2-image {
+    min-width: 180%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 976px) {
+  .swal2-image {
+    min-width: 150%;
+    height: auto;
+  }
+  .swal2-container.swal2-center > .swal2-popup {
+    left: -17%;
+  }
+}
 @media screen and (max-width: 767px) {
   .title {
     padding-top: 29%;
   }
   #TokenInput {
     padding-bottom: 10px;
+  }
+  .swal2-image {
+    min-width: 100%;
+    height: auto;
+  }
+  .swal2-container.swal2-center > .swal2-popup {
+    left: 0;
   }
 }
 
