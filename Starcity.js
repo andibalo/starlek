@@ -205,6 +205,62 @@ $(".modalOverlay.phoenixModal").click(() => {
   tlPhoenix.reverse();
 });
 
+let tlRising = gsap.timeline({ paused: true });
+
+tlRising
+  .to(".modalOverlay.RisingModal", {
+    duration: 0.3,
+    opacity: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    pointerEvents: "auto",
+  })
+  .from(".RisingModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .addLabel("reverseStartingPoint")
+  .from(".RisingModal .fadeInTop", {
+    duration: 0.3,
+    opacity: 0,
+    y: 10,
+    stagger: 0.2,
+  });
+
+let tlRisingReverse = gsap.timeline({ paused: true });
+
+tlRisingReverse
+  .to(".RisingModal .modalContent", { duration: 0.5, opacity: 0, x: "100%" })
+  .to(".modalOverlay.RisingModal", {
+    duration: 0.3,
+    opacity: 0,
+    backgroundColor: "transparent",
+    pointerEvents: "none",
+  });
+
+let isRisingFirstPlay = true;
+$(".location.Rising").click((event) => {
+  if (tlRising.isActive() || tlRisingReverse.isActive()) {
+    return;
+  }
+
+  // tlCorvus.play(0);
+
+  if (isRisingFirstPlay) {
+    tlRising.play();
+    isRisingFirstPlay = false;
+    return;
+  }
+
+  tlRising.reversed()
+    ? tlRising.play()
+    : tlRising.reverse("reverseStartingPoint");
+});
+
+$(".modalOverlay.RisingModal").click(() => {
+  if (tlRising.isActive() || tlRisingReverse.isActive()) {
+    return;
+  }
+  tlRising.reverse("reverseStartingPoint");
+  // tlCorvusReverse.play(0);
+});
+
 let tlExtra = gsap.timeline({ paused: true });
 let tlExtra2 = gsap.timeline({ paused: true });
 let tlExtra3 = gsap.timeline({ paused: true });
@@ -336,9 +392,8 @@ $(".phoenixModal .thirdBanner").click(() => {
 //   }, 1000);
 // }
 
-
 let currentDate = new Date().getTime();
-let targetDateValue = "October 29, 2021 18:15";
+let targetDateValue = "November 27, 2021 18:20";
 let targetDate = new Date(targetDateValue).getTime();
 
 $("#countdown").hide();
