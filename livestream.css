@@ -123,7 +123,7 @@ a:hover {
     margin-bottom: 50px;
   }
   .main {
-    background-image: url(/images/citymap_locked/mobile-dazzling3.png);
+    background-image: url(/images/citymap_locked/vbg-rising-mobile.png);
   }
 }
 
@@ -145,5 +145,8 @@ a:hover {
     font-size: 12px;
     padding-left: 1.25rem;
     margin-top: 12px;
+  }
+  .main {
+    background-image: url(/images/citymap_locked/vbg-rising-mobile4.png);
   }
 }
